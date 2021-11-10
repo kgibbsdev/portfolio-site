@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "moment": "^2.29.1",
+    "purgecss": "^4.0.3"
+  }
+}
