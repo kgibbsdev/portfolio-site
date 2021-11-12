@@ -33,6 +33,7 @@
   /* --color-five: #CD3F8A; */
 
   --button-highlight: #8131c3;
+  --nav-color: #eef12c;
 
   --github-gray: #1B1F23;
   --linkedin-blue: #0A66C2;
@@ -4007,7 +4008,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--color-three);
+  color: var(--nav-color);
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4017,7 +4018,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: var(--color-three);
+  color: var(--nav-color);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4064,7 +4065,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: var(--color-three);
+  background-color: var(--nav-color);
 }
 
 .nav-fill > .nav-link,
@@ -11429,13 +11430,13 @@ html {
   /* color:#1B6977; */
 }
 #mainNav .navbar-brand {
-  color: var(--color-three);
+  color: var(--nav-color);
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: var(--color-three);
+  color: var(--nav-color);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #fff;
@@ -11444,7 +11445,7 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: var(--color-three);
+  color: var(--nav-color);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11466,11 +11467,11 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: var(--color-three);
+    background: var(--nav-color);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: var(--color-three);
+    background: var(--nav-color);
   }
 
   #mainNav.navbar-shrink {
@@ -11512,7 +11513,7 @@ html {
 .masthead .masthead-subheading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
   font-size: 1.25rem;
-  color: var(--color-four);
+  color: #fff;
   /* text-shadow: 1px 0px 0px black; */
 }
 .masthead .masthead-avatar {
