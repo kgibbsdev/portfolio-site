@@ -12,33 +12,27 @@
  */
 :root {
 
-  /* --color-one: #4745D5; */
   --color-one: #0C0C0C;
-  /* --color-one: #BB2A2F; */
-  
+
   --color-two: #7116bb;
-  /* --color-two: #AA393D; */
-  /* --color-two: #BB2A2F; */
 
   --color-three: #d3d545;
-  
+  --color-three-light: #e8eb46;
   
   --color-four: #fff;
-  /* --color-four: #D3D545; */
-  
-
+ 
   --color-five: #2FA0D4;
-  /* --color-five: #2FA0D4; */
-  /* --color-five: #25B1F2; */
-  /* --color-five: #CD3F8A; */
-
+ 
   --button-highlight: #8131c3;
   --nav-color: #eef12c;
+  --nav-color-dark: #9ea045;
+  --link-hover: var(--color-three);
 
   --github-gray: #1B1F23;
   --linkedin-blue: #0A66C2;
   --facebook-blue: #1977F3;
   --twitter-blue: #1D9BF0;
+
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -272,7 +266,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #000;
+  color: var(--link-hover);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -7775,13 +7769,11 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
   color: var(--color-four);
 }
 
 .text-secondary {
   --bs-text-opacity: 1;
-  /* color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important; */
   color: #fff !important;
 }
 
@@ -11395,7 +11387,7 @@ html {
 }
 .divider-custom .divider-custom-icon {
   /* color: #2c3e50; */
-  color: var(--color-three);
+  color: var(--color-three-light);
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
@@ -11467,11 +11459,9 @@ html {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: var(--nav-color);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: var(--nav-color);
   }
 
   #mainNav.navbar-shrink {
@@ -11508,13 +11498,11 @@ html {
   font-size: 2.75rem;
   line-height: 2.75rem;
   color: var(--color-four);
-  /* text-shadow: 1px 1px 5px black; */
 }
 .masthead .masthead-subheading {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
   font-size: 1.25rem;
   color: #fff;
-  /* text-shadow: 1px 0px 0px black; */
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -11550,7 +11538,6 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  /* background-color: rgba(26, 188, 156, 0.9); */
   background-color: var(--color-two);
   
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
