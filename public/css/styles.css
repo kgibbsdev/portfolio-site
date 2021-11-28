@@ -24,7 +24,7 @@
   --color-five: #2FA0D4;
  
   --button-highlight: #8131c3;
-  --nav-color: #eef12c;
+  --nav-color: #fff;
   --nav-color-dark: #9ea045;
   --link-hover: var(--color-three);
 
@@ -515,8 +515,8 @@ progress {
 }
 
 .lead {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.25rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -627,12 +627,20 @@ progress {
 }
 
 .img-fluid {
-  /* max-width: 100%; */
+  max-width: 100%;
   /* width: 100%;
   height: 25vh; */
   object-fit: cover;
   width: 100%;
   height: 250px;
+}
+
+.modal-img-fluid {
+  max-width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
 }
 
 .img-thumbnail {
@@ -4012,7 +4020,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: var(--nav-color);
+  color: var(--color-three-light);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4059,7 +4067,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: var(--nav-color);
+  background-color: var(--color-three-light);
 }
 
 .nav-fill > .nav-link,
@@ -4116,6 +4124,7 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -7768,6 +7777,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
+  font-family: 'Rubik', sans-serif;
   --bs-text-opacity: 1;
   color: var(--color-four);
 }
@@ -7860,17 +7870,11 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  /* background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; */
-  /* background-color: #4D1FA1; */
   background-color: var(--color-one);
-  /* background-image: url("../assets/img/Cloud-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  /* background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important; */
   background-color:var(--color-two);
 }
 
@@ -11354,12 +11358,19 @@ html {
   padding: 6rem 0;
 }
 .page-section .page-section-heading {
-  font-size: 2.25rem;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 3rem;
   line-height: 2rem;
 }
+.social-section-header {
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
 @media (min-width: 992px) {
   .page-section .page-section-heading {
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 2.5rem;
   }
 }
@@ -11424,6 +11435,7 @@ html {
 #mainNav .navbar-brand {
   color: var(--nav-color);
 }
+
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
@@ -11431,13 +11443,13 @@ html {
   color: var(--nav-color);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #fff;
+  color: var(--color-three-light);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
+  color: var(--color-three-light);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: var(--nav-color);
+  color: var(--color-three-light);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11458,10 +11470,10 @@ html {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
+    color: var(--color-three-light);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
+    color: var(--color-three-light);
   }
 
   #mainNav.navbar-shrink {
@@ -11500,8 +11512,8 @@ html {
   color: var(--color-four);
 }
 .masthead .masthead-subheading {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
-  font-size: 1.25rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem;
   color: #fff;
 }
 .masthead .masthead-avatar {
@@ -11516,11 +11528,8 @@ html {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
   }
 }
 .portfolio .portfolio-item {
