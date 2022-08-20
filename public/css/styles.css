@@ -13,14 +13,17 @@
  */
 :root {
 
-  --color-one: #201a4f;
-  --color-two: #FF004E;
+  --color-one: #07003b;
+  --color-two: #e80f50;
   --color-three: #FF004E;
-  --color-three-light: #FF004E;
+  --color-three-light: #8b002a;
   --color-four: #fff;
   --color-five: #2FA0D4;
 
-  --button-highlight: #8131c3;
+  --header-footer-color: #e80f50;
+  /* --copyright-background: --header-footer-color; */
+
+  --button-highlight: #8b002a;
   --nav-color: #fff;
   --nav-color-dark: #9ea045;
   --link-hover: var(--color-three);
@@ -290,7 +293,7 @@ sup {
 }
 
 a {
-  color: var(--color-two);
+  color: var(--header-footer-color);
   text-decoration: underline;
 }
 
@@ -3301,9 +3304,9 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: var(--color-two);
-  border-color: var(--color-two);
+  color: var(--header-footer-color);
+  background-color: var(---header-footer-color);
+  border-color: var(--header-footer-color);
 }
 
 .btn-primary:hover {
@@ -8814,7 +8817,7 @@ fieldset:disabled .btn {
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
 }
 
 .bg-success {
@@ -12335,9 +12338,9 @@ html {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
   border-radius: 1rem;
-  border-color: var(--color-two);
+  border-color: var(--header-footer-color);
 }
 
 .divider-custom .divider-custom-line:first-child {
@@ -12350,12 +12353,12 @@ html {
 
 .divider-custom .divider-custom-icon {
   /* color: #2c3e50; */
-  color: var(--color-three-light);
+  color: var(--header-footer-color);
   font-size: 2rem;
 }
 
 .divider-custom.divider-light .divider-custom-line {
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
   /* color: #FBD942; */
 }
 
@@ -12493,7 +12496,7 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
   border-radius: 25% 10%;
-  border: 5px solid var(--color-two);
+  border: 5px solid var(--header-footer-color);
 }
 
 @media (min-width: 992px) {
@@ -12524,7 +12527,7 @@ html {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
 
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: bold;
@@ -12565,16 +12568,16 @@ html {
 }
 
 .copyright {
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
 }
 
 /* Change Selection Text Color When Highlighting */
 ::-moz-selection {
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
   color: #fff;
 }
 
 ::selection {
-  background-color: var(--color-two);
+  background-color: var(--header-footer-color);
   color: #fff;
 }
