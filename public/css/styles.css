@@ -16,7 +16,7 @@
   --color-one: #07003b;
   --color-two: #e80f50;
   --color-three: #FF004E;
-  --color-three-light: #8b002a;
+  --color-three-dark: #8b002a;
   --color-four: #fff;
   --color-five: #2FA0D4;
 
@@ -4570,7 +4570,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--color-three-light);
+  color: var(--color-three-dark);
 }
 
 .nav-link.disabled {
@@ -4625,7 +4625,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: var(--color-three-light);
+  background-color: var(--color-three-dark);
 }
 
 .nav-fill>.nav-link,
@@ -5229,177 +5229,55 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+/* Timeline Container */
+.timeline {
+  background: var(--primary-color);
+  /* margin: 20px auto; */
+  margin-left: auto;
+  margin-right:auto;
+  padding: 20px;
+  width: 50%;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid var(--color-three);
+}
+
+/* Card container */
 .card {
   position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: var(--header-footer-color);
+  color: white;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 0.125rem solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.5rem;
+  gap: 10px;
 }
 
-.card>hr {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.card>.list-group {
-  border-top: inherit;
-  border-bottom: inherit;
-}
-
-.card>.list-group:first-child {
-  border-top-width: 0;
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
-}
-
-.card>.list-group:last-child {
-  border-bottom-width: 0;
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
-}
-
-.card>.card-header+.list-group,
-.card>.list-group+.card-footer {
-  border-top: 0;
-}
-
-.card-body {
-  flex: 1 1 auto;
-  padding: 1rem 1rem;
-}
-
+/* Title of the card */
 .card-title {
-  margin-bottom: 0.5rem;
+  color: white;
+  position: relative;
 }
 
-.card-subtitle {
-  margin-top: -0.25rem;
-  margin-bottom: 0;
-}
-
-.card-text:last-child {
-  margin-bottom: 0;
-}
-
-.card-link+.card-link {
-  margin-left: 1rem;
-}
-
-.card-header {
-  padding: 0.5rem 1rem;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.125);
-}
-
-.card-header:first-child {
-  border-radius: 0.375rem 0.375rem 0 0;
-}
-
-.card-footer {
-  padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 0.125rem solid rgba(0, 0, 0, 0.125);
-}
-
-.card-footer:last-child {
-  border-radius: 0 0 0.375rem 0.375rem;
-}
-
-.card-header-tabs {
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
-  margin-left: -0.5rem;
-  border-bottom: 0;
-}
-
-.card-header-pills {
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
-}
-
-.card-img-overlay {
+/* Timeline dot  */
+.card-title::before {
+  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  border-radius: 0.375rem;
-}
-
-.card-img,
-.card-img-top,
-.card-img-bottom {
-  width: 100%;
-}
-
-.card-img,
-.card-img-top {
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
-}
-
-.card-img,
-.card-img-bottom {
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
-}
-
-.card-group>.card {
-  margin-bottom: 0.75rem;
-}
-
-@media (min-width: 576px) {
-  .card-group {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .card-group>.card {
-    flex: 1 0 0%;
-    margin-bottom: 0;
-  }
-
-  .card-group>.card+.card {
-    margin-left: 0;
-    border-left: 0;
-  }
-
-  .card-group>.card:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .card-group>.card:not(:last-child) .card-img-top,
-  .card-group>.card:not(:last-child) .card-header {
-    border-top-right-radius: 0;
-  }
-
-  .card-group>.card:not(:last-child) .card-img-bottom,
-  .card-group>.card:not(:last-child) .card-footer {
-    border-bottom-right-radius: 0;
-  }
-
-  .card-group>.card:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .card-group>.card:not(:first-child) .card-img-top,
-  .card-group>.card:not(:first-child) .card-header {
-    border-top-left-radius: 0;
-  }
-
-  .card-group>.card:not(:first-child) .card-img-bottom,
-  .card-group>.card:not(:first-child) .card-footer {
-    border-bottom-left-radius: 0;
-  }
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 999px;
+  left: -38px;
+  border: 3px solid var(--color-two);
 }
 
 .accordion-button {
@@ -12403,16 +12281,16 @@ html {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: var(--color-three-light);
+  color: var(--color-three-dark);
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active,
 #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: var(--color-three-light);
+  color: var(--color-three-dark);
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: var(--color-three-light);
+  color: var(--color-three-dark);
 }
 
 #mainNav .navbar-toggler {
@@ -12437,13 +12315,13 @@ html {
   }
 
   #mainNav .navbar-nav>li.nav-item>a.nav-link.active {
-    color: var(--color-three-light);
+    color: var(--color-three-dark);
   }
 
   #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active,
   #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus,
   #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
-    color: var(--color-three-light);
+    color: var(--color-three-dark);
   }
 
   #mainNav.navbar-shrink {
